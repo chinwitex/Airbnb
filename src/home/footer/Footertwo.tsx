@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 
 
 function Footertwo() {
@@ -15,8 +15,8 @@ function Footertwo() {
     <div  className='ml-36 flex gap-36 mt-7 '>
     <div>
     <p className='font-extrabold'>support</p>
-      {supports.map((supoort)=>(
-        <div className='mt-7 font-semibold'>
+      {supports.map((supoort,i)=>(
+        <div className='mt-7 font-semibold' key={i}>
          
           <p>{supoort}</p>
         </div>

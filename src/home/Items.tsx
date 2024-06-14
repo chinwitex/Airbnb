@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import photo1 from '../assets/A11.jpg';
 import photo2 from '../assets/A12.jpg';
 import photo3 from '../assets/A13.jpg';
@@ -22,7 +22,7 @@ import photo20 from '../assets/A30.jpg';
 
 import { HeartIcon,PoundSterling,StarIcon } from 'lucide-react';
 import { Swiper,SwiperSlide } from 'swiper/react';
-import { Navigation,Autoplay,Pagination,Scrollbar } from 'swiper/modules';
+import { Navigation,Pagination,Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 import  'swiper/css/navigation';
 import  'swiper/css/autoplay';
@@ -68,8 +68,8 @@ const items =[
    
  <section className='w-[100vw] '>
  <div className='grid grid-cols-4 gap-6 w-[90vw] ml-[50%] translate-x-[-50%] mt-8 '>
- {items.map((item)=>(
-  <div>
+ {items.map((item,i)=>(
+  <div key={i}>
     <div className='h-[280px] shadow-xl'>
       
       <Swiper 
@@ -101,7 +101,7 @@ const items =[
      <PoundSterling/>
      <p className='font-semibold'>{item.title4}</p>
     </div>
-   <section className='flex relative bottom-24 left-[240px]'>
+   <section className='flex relative bottom-24 left-[340px]'>
     <StarIcon/>
    <p className='font-extrabold'>5.0</p>
    </section>

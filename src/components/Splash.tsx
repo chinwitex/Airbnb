@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import logo from '../assets/Airbnbll-removebg-preview.png'
 function SpalshScreen() {
   const [showSplash, setshowSplash] = useState(true);

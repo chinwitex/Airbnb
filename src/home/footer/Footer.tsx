@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import Footertwo from './Footertwo';
 import { GlobeIcon,PoundSterling,FacebookIcon,TwitterIcon,InstagramIcon,MapIcon } from 'lucide-react';
 
